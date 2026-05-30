@@ -1,0 +1,189 @@
+/* Healthcare AI Ops & Oversight — brief.alhq.io archive
+   ALHQ brand: navy #1E3A5F, coral #E85D53, white. No JS required. */
+
+:root {
+  --navy: #1E3A5F;
+  --navy-deep: #16304d;
+  --coral: #E85D53;
+  --ink: #1c2530;
+  --muted: #5a6675;
+  --line: #e3e8ee;
+  --bg: #ffffff;
+  --bg-soft: #f6f8fb;
+  --maxw: 720px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, "Apple Color Emoji", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--coral); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.skip-link {
+  position: absolute; left: -999px; top: 0;
+  background: var(--navy); color: #fff; padding: .6rem 1rem; z-index: 100;
+}
+.skip-link:focus { left: 0; }
+
+/* ---------- Masthead ---------- */
+.masthead {
+  background: var(--navy);
+  color: #fff;
+  border-bottom: 4px solid var(--coral);
+}
+.masthead-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1.6rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.masthead a { color: #fff; }
+.masthead-logo { height: 46px; width: auto; display: block; flex: 0 0 auto; }
+.masthead-text { display: flex; flex-direction: column; gap: .15rem; }
+.masthead-title {
+  font-size: 1.15rem; font-weight: 700; letter-spacing: .2px; margin: 0;
+  line-height: 1.25;
+}
+.masthead-tagline { font-size: .85rem; color: #cdd7e4; margin: 0; }
+
+/* ---------- Layout ---------- */
+main { max-width: var(--maxw); margin: 0 auto; padding: 2.4rem 1.25rem 1rem; }
+
+/* ---------- Index ---------- */
+.index-intro { margin: 0 0 2rem; }
+.index-intro h1 { font-size: 1.5rem; color: var(--navy); margin: 0 0 .4rem; }
+.index-intro p { color: var(--muted); margin: 0; }
+
+.issue-list { list-style: none; margin: 0; padding: 0; }
+.issue-row { border-top: 1px solid var(--line); }
+.issue-row:last-child { border-bottom: 1px solid var(--line); }
+.issue-link {
+  display: block; padding: 1.4rem 0; color: inherit; text-decoration: none;
+}
+.issue-link:hover { text-decoration: none; }
+.issue-link:hover .issue-title { color: var(--coral); }
+.issue-date { font-size: .8rem; color: var(--muted); text-transform: uppercase;
+  letter-spacing: .06em; }
+.issue-num {
+  display: inline-block; margin-left: .6rem; font-size: .72rem; font-weight: 700;
+  color: #fff; background: var(--coral); padding: .1rem .5rem; border-radius: 3px;
+  vertical-align: middle;
+}
+.issue-title { font-size: 1.3rem; color: var(--navy); margin: .35rem 0 .25rem;
+  line-height: 1.3; transition: color .15s ease; }
+.issue-sub { margin: 0; color: var(--muted); }
+
+/* ---------- Issue page ---------- */
+article header.issue-head { margin-bottom: 2rem; }
+.issue-head h1 {
+  font-size: 2rem; color: var(--navy); line-height: 1.2; margin: 0 0 .6rem;
+  letter-spacing: -0.01em;
+}
+.standfirst { font-size: 1.2rem; color: var(--muted); margin: 0 0 1.5rem;
+  line-height: 1.45; }
+
+.byline {
+  display: flex; align-items: center; gap: .7rem;
+  padding: 1rem 0; border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.byline-logo {
+  height: 38px; width: 38px; border-radius: 6px; background: var(--navy);
+  padding: 4px; object-fit: contain; flex: 0 0 auto;
+}
+.byline-meta { display: flex; flex-direction: column; line-height: 1.3; }
+.byline-name { font-weight: 700; color: var(--navy); font-size: .95rem; }
+.byline-date { color: var(--muted); font-size: .85rem; }
+
+.issue-body { margin-top: 2rem; }
+.issue-body h2 {
+  font-size: 1.35rem; color: var(--navy); margin: 2.4rem 0 .8rem;
+  padding-top: .4rem; line-height: 1.3;
+}
+.issue-body h3 { font-size: 1.1rem; color: var(--navy-deep); margin: 1.8rem 0 .6rem; }
+.issue-body p { margin: 0 0 1.1rem; }
+.issue-body ul, .issue-body ol { margin: 0 0 1.2rem; padding-left: 1.4rem; }
+.issue-body li { margin: .35rem 0; }
+
+.issue-body blockquote {
+  margin: 1.6rem 0; padding: 1rem 1.25rem; background: var(--bg-soft);
+  border-left: 4px solid var(--coral); color: var(--navy-deep);
+  font-size: 1.08rem; border-radius: 0 6px 6px 0;
+}
+.issue-body blockquote p { margin: 0; }
+
+.table-wrap { overflow-x: auto; margin: 1.5rem 0; }
+.issue-body table {
+  border-collapse: collapse; width: 100%; font-size: .94rem;
+  border: 1px solid var(--line);
+}
+.issue-body thead th {
+  background: var(--navy); color: #fff; text-align: left; font-weight: 600;
+  padding: .65rem .8rem; vertical-align: top;
+}
+.issue-body td {
+  border-top: 1px solid var(--line); padding: .65rem .8rem; vertical-align: top;
+}
+.issue-body tbody tr:nth-child(even) { background: var(--bg-soft); }
+
+code {
+  background: var(--bg-soft); padding: .1rem .35rem; border-radius: 4px;
+  font-size: .9em; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* ---------- Sources ---------- */
+.sources {
+  margin: 2.6rem 0 0; padding-top: 1rem; border-top: 2px solid var(--line);
+}
+.sources h2 { font-size: 1.15rem; color: var(--navy); margin: 0 0 .8rem; }
+.sources ul { padding-left: 1.2rem; font-size: .92rem; color: var(--muted); }
+.sources a { word-break: break-word; }
+
+/* ---------- Subscribe CTA ---------- */
+.cta {
+  margin: 2.8rem 0 1rem; padding: 1.6rem; background: var(--bg-soft);
+  border: 1px solid var(--line); border-radius: 10px; text-align: center;
+}
+.cta h2 { margin: 0 0 .4rem; color: var(--navy); font-size: 1.2rem; }
+.cta p { margin: 0 0 1rem; color: var(--muted); }
+.btn {
+  display: inline-block; background: var(--coral); color: #fff !important;
+  padding: .7rem 1.5rem; border-radius: 6px; font-weight: 600;
+  text-decoration: none !important;
+}
+.btn:hover { background: #d44b41; }
+
+/* ---------- Footer ---------- */
+footer.site-footer {
+  margin-top: 3rem; background: var(--navy); color: #c8d3e0;
+}
+.footer-inner {
+  max-width: var(--maxw); margin: 0 auto; padding: 2rem 1.25rem;
+  font-size: .85rem; line-height: 1.6;
+}
+.footer-inner a { color: #fff; }
+.footer-disclaimer { margin: 0 0 1rem; }
+.footer-links { margin: 0 0 1rem; display: flex; gap: 1.2rem; flex-wrap: wrap; }
+.footer-meta { color: #8ea0b6; margin: 0; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  body { font-size: 17px; }
+  .issue-head h1 { font-size: 1.6rem; }
+  main { padding: 1.8rem 1rem 1rem; }
+  .masthead-inner { padding: 1.2rem 1rem; }
+}

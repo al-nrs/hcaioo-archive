@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+<title>Healthcare AI Ops &amp; Oversight</title>
+<link>https://brief.alhq.io/</link>
+<description>The executive brief on AI in healthcare operations.</description>
+<language>en-us</language>
+<lastBuildDate>Sat, 30 May 2026 15:13:11 +0000</lastBuildDate>
+<atom:link href="https://brief.alhq.io/feed.xml" rel="self" type="application/rss+xml" />
+<item><title>Ambient documentation is a margin decision. Treat the audit trail like one.</title><link>https://brief.alhq.io/issues/01-ambient-documentation-margin-decision/</link><guid isPermaLink="true">https://brief.alhq.io/issues/01-ambient-documentation-margin-decision/</guid><pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate><description>Ambient documentation needs an audit trail</description><dc:creator>Augmented Leadership HQ</dc:creator></item>
+</channel>
+</rss>
