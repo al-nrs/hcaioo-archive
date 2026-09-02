@@ -5,8 +5,9 @@
 <link>https://brief.alhq.io/</link>
 <description>The executive brief on AI in healthcare operations.</description>
 <language>en-us</language>
-<lastBuildDate>Tue, 02 Jun 2026 10:14:27 +0000</lastBuildDate>
+<lastBuildDate>Wed, 02 Sep 2026 14:09:50 +0000</lastBuildDate>
 <atom:link href="https://brief.alhq.io/feed.xml" rel="self" type="application/rss+xml" />
+<item><title>Hospitals Need Two AI Ledgers: Value and Failure</title><link>https://brief.alhq.io/issues/02-hospitals-need-two-ai-ledgers/</link><guid isPermaLink="true">https://brief.alhq.io/issues/02-hospitals-need-two-ai-ledgers/</guid><pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate><description>If a hospital can count AI hours saved but cannot count errors, near misses, and patient concerns, its oversight system is incomplete.</description><dc:creator>Augmented Leadership HQ</dc:creator></item>
 <item><title>Ambient documentation is a margin decision. Treat the audit trail like one.</title><link>https://brief.alhq.io/issues/01-ambient-documentation-margin-decision/</link><guid isPermaLink="true">https://brief.alhq.io/issues/01-ambient-documentation-margin-decision/</guid><pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate><description>Ambient documentation needs an audit trail</description><dc:creator>Augmented Leadership HQ</dc:creator></item>
 </channel>
 </rss>
