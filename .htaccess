@@ -1,0 +1,14 @@
+# Exact October 21 issue switch; every pre-existing Git blob is preserved.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^(?:index\.html)?$ cdx-eval-oct21.php [L,E=Cache-Control:no-cache]
+RewriteRule ^(?:feed\.xml|sitemap\.xml)$ cdx-eval-oct21.php [L,E=Cache-Control:no-cache]
+RewriteRule ^issues/clinical-ai-evaluation-gap(?:/(?:index\.html)?)?$ cdx-eval-oct21.php [L,E=Cache-Control:no-cache]
+</IfModule>
+<IfModule mod_headers.c>
+<Files "cdx-eval-oct21.php">
+Header always set Cache-Control "no-store, no-cache, private, max-age=0, must-revalidate"
+Header always set Pragma "no-cache"
+Header always set Expires "0"
+</Files>
+</IfModule>
